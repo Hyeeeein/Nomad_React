@@ -4,7 +4,7 @@ import SuperConverter from "./SuperConverter";
 
 const State = () => {
   return (
-    <div>
+    <div style={{ border: "5px solid black", padding: "20px" }}>
       <h1>State</h1>
       <Counter />
       <br />
