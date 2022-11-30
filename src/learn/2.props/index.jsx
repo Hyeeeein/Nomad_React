@@ -1,10 +1,11 @@
+import BasicStyle from "../index.module.css";
 import React from "react";
 import { useState } from "react";
 import PropTypes from "prop-types";
 
 const Props = () => {
   function Btn({ txt, onClick, fontSize }) {
-    console.log(txt + "랜더링");
+    // console.log(txt + "랜더링");
 
     return (
       <button
@@ -35,8 +36,9 @@ const Props = () => {
     fontSize: PropTypes.number,
   };
   return (
-    <div style={{ border: "5px solid black", padding: "20px" }}>
-      <MemorizedBtn txt={value} onClick={changeValue} fontSize={"sdkjfls"} />
+    <div className={BasicStyle.box}>
+      <h1>props</h1>
+      <MemorizedBtn txt={value} onClick={changeValue} fontSize={20} />
       <MemorizedBtn txt="Don't Click Me!" />
     </div>
   );
