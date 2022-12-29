@@ -12,13 +12,13 @@ function UseEffect() {
   }
 
   useEffect(() => {
-    console.log("한 번만 랜더링");
+    // console.log("한 번만 랜더링");
   }, []);
   useEffect(() => {
-    console.log("input 의 value 값이 바뀔 때만 랜더링");
+    // console.log("input 의 value 값이 바뀔 때만 랜더링");
   }, [value]);
   useEffect(() => {
-    console.log("하트를 누를 때만 랜더링");
+    // console.log("하트를 누를 때만 랜더링");
   }, [like]);
 
   return (

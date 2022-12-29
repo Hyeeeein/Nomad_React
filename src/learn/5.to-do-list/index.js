@@ -17,7 +17,7 @@ function ToDoList() {
     setTodos((curArr) => [todo, ...curArr]);
     setTodo("");
   }
-  console.log(todos);
+  // console.log(todos);
 
   return (
     <div className={BasicStyle.box}>
